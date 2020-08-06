@@ -2,8 +2,8 @@
 require("connection.php");
 if(isset($_POST['submit']))
 {
-	$sql = "INSERT INTO items (item_id, item_name, item_price, item_company)
-	VALUES ('$_POST['upc'])', '$_POST['name'])', '$_POST['price'])' )";
+	$sql = "INSERT INTO items (item_id, item_name, item_price, item_company) 
+	VALUES (".$_POST['upc'].", ".$_POST['name'].", ".$_POST['price'].")";
 
 	if ($conn->query($sql) === TRUE) {
 	  echo "New record created successfully";
@@ -11,7 +11,7 @@ if(isset($_POST['submit']))
 	  echo "Error: " . $sql . "<br>" . $conn->error;
 	}
 	$sql = "INSERT INTO curr_items (item_id, item_name, item_quantity, item_manu_date, item_exp_date)
-	VALUES ('$_POST['upc'])', '$_POST['name'])', '$_POST['price'])', '$_POST['quantity'])', '$_POST['manu_date'])', '$_POST['exp_date'])' )";
+	VALUES ('".$_POST['upc']."', '".$_POST['name']."', '".$_POST['price']."', '".$_POST['quantity']."', '".$_POST['manu_date']."', '".$_POST['exp_date']."' )";
 	
 	if ($conn->query($sql) === TRUE) {
 	  echo "New record created successfully";
