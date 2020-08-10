@@ -1,0 +1,34 @@
+{
+  "items" : {
+    "012000018800" : {
+      "brand" : "Pepsi",
+      "category" : "items/beverages/pepsi",
+      "expiry" : {
+        "e1" : {
+          "exp_date" : "21/11/2021",
+          "quantity" : 37
+        }
+      },
+      "name" : "Pepsi Zero",
+      "price" : 2.6,
+      "quantity" : 37
+    },
+    "034000246007" : {
+      "brand" : "Hershey",
+      "category" : "items/candies/hershey",
+      "expiry" : {
+        "e1" : {
+          "expiry" : "10/08/2020",
+          "quantity" : 4
+        },
+        "e2" : {
+          "expiry" : "16/12/2020",
+          "quantity" : 6
+        }
+      },
+      "name" : "Kitkat",
+      "price" : 2.39,
+      "quantity" : 10
+    }
+  }
+}
