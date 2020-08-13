@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AddItems from "./addItems.jsx";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+class App extends React.Component{
+
+
+   render() {
+
+       function aItems() {
+
+       }
+    return (
+
+         <div className="App">
+             <header className="App-header">
+          <form id="form1" action="/addItems">
+              <input type="submit"  name="submit" value="Add Items in Inventory"/>
+          </form>
+
+          <form id="form2" >
+              <input type="submit" name="submit" value="Get Order Details"/>
+
+          </form>
+
+          <form id="form3" action="getExpired.js">
+              <input type="submit" name="submit" value="Get Expired Products"/>
+          </form>
+                 </header>
+         </div>
   );
+   }
 }
 
 export default App;
